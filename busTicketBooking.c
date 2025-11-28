@@ -2,6 +2,7 @@
 int seats[6][4] = {0};
 int seat, count = 0;
 
+
 int bookSeat()
 {
     printf("**-----------------------------------**\n");
@@ -33,6 +34,7 @@ int bookSeat()
         return 0;
     }
 }
+
 int showBus()
 {
     for (int i = 0; i < 6; i++)
@@ -44,6 +46,7 @@ int showBus()
         printf("\n");
     }
 }
+
 int main()
 {
     int ticketBooking;
