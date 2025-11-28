@@ -1,6 +1,6 @@
 #include <stdio.h>
 int seats[6][4] = {0};
-int seat, count;
+int seat, count = 0;
 
 int bookSeat()
 {
@@ -26,9 +26,9 @@ int bookSeat()
             }
         }
     }
-    if (count > seat)
+    if (count != seat)
     {
-        printf("Seat is Not Available\n");
+        printf("%d/%d tickets are booked!", count, seat);
         printf("**-----------------------------------**\n");
         return 0;
     }
