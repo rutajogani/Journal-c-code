@@ -2,7 +2,14 @@
 int seats[6][4] = {0};
 int seat, count = 0;
 
-
+int windowSeat()
+{
+    for (int i = 0; i < 1; i++)
+    {
+        
+    }
+    
+}
 int bookSeat()
 {
     printf("**-----------------------------------**\n");
