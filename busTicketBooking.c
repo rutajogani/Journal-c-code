@@ -4,11 +4,23 @@ int seat, count = 0;
 
 int windowSeat()
 {
-    for (int i = 0; i < 1; i++)
+    int windowSeat = 1;
+    for (int row = 0; row < 6; row++)
     {
-        
+        if (seats[row][0] == 0 || seats[row][0])
+        {
+            windowSeat = 0;
+            break;
+        }
+        if (windowSeat)
+        {
+            printf("All window seats are full.\n");
+        }
+        else
+        {
+            printf("Window seats are available.\n");
+        }
     }
-    
 }
 int bookSeat()
 {
@@ -63,7 +75,8 @@ int main()
         printf("**-----------------------------------**\n");
         printf("Do you want Book Ticket so Enter - 1\n");
         printf("Do you want Show Seat so Enter - 2\n");
-        printf("Do you want Exit so Enter - 3\n");
+        printf("Do you want Window Seat so Enter - 3\n");
+        printf("Do you want Exit so Enter - 4\n");
 
         printf("**-----------------------------------**\n");
         printf("What do you want?\n");
@@ -80,6 +93,9 @@ int main()
             showBus();
             break;
         case 3:
+            windowSeat();
+            break;
+        case 4:
             return 0;
         default:
             printf("Not a Optional\n");
